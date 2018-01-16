@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Serg Krasavin](https://up.htmlacademy.ru/adaptive/13/user/358109).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Нестеренко](https://htmlacademy.ru/profile/nesterenkomacks).
 
 ---
 
