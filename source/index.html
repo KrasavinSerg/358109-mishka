@@ -10,7 +10,7 @@
     <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип мишка">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper"></div>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#">Каталог товаров</a>
@@ -34,18 +34,29 @@
       <h1 class="page-main__title">Милые штучки ручной работы</h1>
     </div>
 
-    <section class="catalog">
-      <a class="catalog__link" href="catalog.html">
-        <div class="catalog__interior">Предметы интерьера</div>
+    <section class="catalog-menu">
+      <a class="catalog-menu__link" href="#">
+        <div class="catalog-menu__interior">Предметы интерьера</div>
       </a>
-      <a class="catalog__link" href="#">
-        <div class="catalog__toys">Детские игрушки</div>
+      <a class="catalog-menu__link" href="#">
+        <div class="catalog-menu__toys">Детские игрушки</div>
       </a>
     </section>
 
-    <section class="best-goods">
-      <span class="best-goods__name">Вязаные корзинки</span>
-      <h2 class="best-goods__title">Товар недели</h2>
+    <section class="catalog-menu">
+      <ul class="catalog-menu__list">
+        <li class="catalog-menu__item">
+          <a class="catalog-menu__interior-link">Предметы интерьера</a>
+        </li>
+        <li class="catalog-menu__item">
+          <a class="catalog-menu__toys-link">Детские игрушки</a>
+        </li>
+      </ul>
+    </section>
+
+    <article class="best-goods">
+      <h2 class="best-goods__name">Вязаные корзинки</h2>
+      <p class="best-goods__title">Товар недели</p>
       <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <div class="best-goods__info">
         <div class="best-goods__type">
@@ -60,25 +71,41 @@
         </div>
       </div>
       <img class="best-goods__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
-      <span class="best-goods__price">Цена: 990 руб.</span>
+      <p class="best-goods__price">Цена: 990 руб.</p>
       <a class="best-goods__order button" href="#">Зказать</a>
-    </section>
+    </article>
 
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас</h2>
-      <p class="about-us__text">Экологически чистые материалы</p>
-      <p class="about-us__text">Скандинавский стиль по российской цене</p>
-      <p class="about-us__text">Увеличивает лайки на фотографиях</p>
-      <p class="about-us__text">Связано вручную с любовью и умилением</p>
-      <p class="about-us__text">Поддержка отечественного производителя</p>
-      <p class="about-us__text">Поставляется в подарочной упаковке</p>
+      <ul class="about-us__list">
+        <li class="about-us__item">
+          <p class="about-us__text">Экологически чистые материалы</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text">Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text">Поддержка отечественного производителя</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
     </section>
 
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <p class="reviews__author">Анастасия Красильникова</p>
-      <p class="reviews__contact">@misssssiskras</p>
+      <blockquote class="reviews__item">
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <p class="reviews__author">Анастасия Красильникова</p>
+        <p class="reviews__contact">@misssssiskras</p>
+      </blockquote>
       <button class="reviews__prev" type="button">назад</button>
       <button class="reviews__next" type="button">вперед</button>
       <a class="reviews__write button" href="#">написать</a>
@@ -101,15 +128,14 @@
       </div>
     </section>
 
-    <section class="footer__map">
+    <section class="page-footer__map">
       <iframe class="map" src="http://placehold.it/150x100" alt="карта"></iframe>
     </section>
 
-    <section class="page-footer__write">
       <a class="page-footer__write-button" href="#">Напишите нам</a>
-    </section>
 
     <section class="page-footer__social">
+      <h2 class="visually-hidden">Мы в соц сетях</h2>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
           <a class="page-footer__social-instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
@@ -129,5 +155,19 @@
     </section>
 
   </footer>
+
+  <article class="modal">
+    <h3 class="modal__title">Добавить в корзину</h3>
+    <p class="modal__text">Выберите размер:</p>
+    <div class="modal__choice-size">
+      <input type="radio" name="size" id="s">
+      <label for="s">s</label>
+      <input type="radio" name="size" id="m">
+      <label for="m">m</label>
+      <input type="radio" name="size" id="l">
+      <label for="l">l</label>
+    </div>
+    <a class="modal__add" href="#">Добавить</a>
+  </article>
 </body>
 </html>
