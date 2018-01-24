@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -35,15 +36,7 @@
     </div>
 
     <section class="catalog-menu">
-      <a class="catalog-menu__link" href="#">
-        <div class="catalog-menu__interior">Предметы интерьера</div>
-      </a>
-      <a class="catalog-menu__link" href="#">
-        <div class="catalog-menu__toys">Детские игрушки</div>
-      </a>
-    </section>
-
-    <section class="catalog-menu">
+      <h2 class="visually-hidden">Меню каталога</h2>
       <ul class="catalog-menu__list">
         <li class="catalog-menu__item">
           <a class="catalog-menu__interior-link">Предметы интерьера</a>
@@ -58,18 +51,14 @@
       <h2 class="best-goods__name">Вязаные корзинки</h2>
       <p class="best-goods__title">Товар недели</p>
       <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <div class="best-goods__info">
-        <div class="best-goods__type">
-          <div class="best-goods__color">Цвет:</div>
-          <div class="best-goods__diameter">Диаметр:</div>
-          <div class="best-goods__height">Высота:</div>
-        </div>
-        <div class="best-goods__value">
-          <div class="best-goods__color-name">«Тиффани»/серый</div>
-          <div class="best-goods__diameter-size">25 см</div>
-          <div class="best-goods__height-size">15 см</div>
-        </div>
-      </div>
+      <dl class="best-goods__info">
+        <dt class="best-goods__type">Цвет:</dt>
+          <dd class="best-goods__value">Тиффани»/серый</dd>
+        <dt class="best-goods__type">Диаметр:</dt>
+          <dd class="best-goods__value">25 см</dd>
+        <dt class="best-goods__type">Высота:</dt>
+          <dd class="best-goods__value">15 см</dd>
+      </dl>
       <img class="best-goods__image" src="http://placehold.it/150x100" alt="Вязаные корзинки">
       <p class="best-goods__price">Цена: 990 руб.</p>
       <a class="best-goods__order button" href="#">Зказать</a>
@@ -117,18 +106,17 @@
     <section class="page-footer__contacts">
       <h2 class="page-footer__contacts-title">Контакты</h2>
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts-type">
-          <div class="">e-mail:</div>
-          <div class="">адрес:</div>
-        </div>
-        <div class="page-footer__contacts-text">
-          <a class="page-footer__contacts-email" href="#">info@mimimishkashop.ru</a>
-          <div class="page-footer__contacts-text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</div>
-        </div>
+        <dl class="page-footer__contacts-list">
+          <dt class="page-footer__contacts-type">e-mail:</dt>
+            <dd class="page-footer__contacts-text">info@mimimishkashop.ru</dd>
+          <dt class="page-footer__contacts-type">адрес:</dt>
+            <dd class="page-footer__contacts-text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</dd>
+        </dl>
       </div>
     </section>
 
     <section class="page-footer__map">
+      <h2 class="visually-hidden">Карта</h2>
       <iframe class="map" src="http://placehold.it/150x100" alt="карта"></iframe>
     </section>
 
@@ -150,6 +138,7 @@
     </section>
  
     <section class="page-footer__copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
       <b class="page-footer__copyright-text">Разработано:</b>
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </section>

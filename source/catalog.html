@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -34,6 +35,7 @@
       <h1 class="page-main__title">Каталог товаров</h1>
     </div>
     <section class="catalog">
+      <h2 class="visually-hidden">Карточка товара</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img class="catalog-item__image" src="#" alt="зайчик">
@@ -65,9 +67,9 @@
 
     <section class="manufacture">
       <h2 class="manufacture__title">Процесс производства</h2>
-      <video class="manufacture__video" width="200" height="100" poster="#">
-        <source src="#" type="#">
-      </video>
+      <div class="manufacture__video">
+        <img src="http://placehold.it/150x100" alt="видео">
+      </div>
       <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
       <a class="manufacture__order button" href="#">Сделать заказ</a>
     </section>
@@ -91,6 +93,7 @@
     </section>
 
     <section class="page-footer__copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
       <b class="page-footer__copyright-text">Разработано:</b>
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </section>
