@@ -1,0 +1,27 @@
+.catalog-menu__list {
+  border: 2px solid red;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.catalog-menu__item-interior {
+  list-style: none;
+  background: #63d1bb;
+}
+
+.catalog-menu__item-toys {
+  list-style: none;
+  background: #56c3b2;
+}
+
+.catalog-menu__text {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 110px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+}

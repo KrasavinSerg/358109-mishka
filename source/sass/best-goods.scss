@@ -1,0 +1,70 @@
+.best-goods {
+  border: 2px solid green;
+  padding: 32px 30px;
+  background-color: #ffffff;
+}
+
+.best-goods__name {
+  margin: 0px;
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.best-goods__title {
+  margin: 0px;
+  margin-bottom: 12px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.best-goods__description {
+  margin: 0px;
+  margin-bottom: 36px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.best-goods__info {
+  margin: 0px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.best-goods__image {
+  margin-bottom: 25px;
+}
+
+.best-goods__price {
+  margin: 0px;
+  margin-bottom: 25px;
+  color: #444444;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.best-goods__order {
+  display: block;
+  border: 2px solid #444;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
