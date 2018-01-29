@@ -1,0 +1,22 @@
+@import "body";
+@import "header";
+@import "page-main.scss";
+@import "catalog-menu";
+@import "best-goods";
+@import "about-us";
+@import "reviews";
+@import "contacts";
+@import "page-main__map";
+@import "page-footer__social";
+@import "page-footer__copyright";
+
+/*------Catalog-----*/
+@import "page-main__intro";
+@import "catalog";
+@import "manufacture";
+
+/*-----Form-----*/
+@import "order-form";
+
+/*------Modal-----*/
+@import "modal";
