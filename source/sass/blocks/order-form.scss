@@ -1,4 +1,6 @@
 .order-form {
+  width: 260px;
+  margin: 0 auto;
   background-color: #ffffff;
   padding-left: 30px;
   padding-right: 30px;
@@ -15,11 +17,8 @@
 }
 
 .order-form__list {
-  padding-left: 0;
-}
-
-.order-form__item {
   list-style: none;
+  padding-left: 0;
 }
 
 .order-form__note {

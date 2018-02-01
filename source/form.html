@@ -2,27 +2,27 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Mishka</title>
+  <title>Mishka-form</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--catalog">
             <a href="#">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--order">
             <a href="#">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--cart">
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -111,14 +111,14 @@
     <section class="page-footer__social">
       <h2 class="visually-hidden">Мы в соц сетях</h2>
       <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+        <li class="page-footer__social-item page-footer__social-item--insta">
+          <a class="page-footer__social-link" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-facebook" href="https://www.facebook.com/htmlacademy">Файсбук</a>
+        <li class="page-footer__social-item page-footer__social--fb">
+          <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">Файсбук</a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-twitter" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+        <li class="page-footer__social-item page-footer__social--twitter">
+          <a class="page-footer__social-link" href="https://www.twitter.com/htmlacademy">Твиттер</a>
         </li>
       </ul>
     </section>

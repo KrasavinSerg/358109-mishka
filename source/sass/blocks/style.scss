@@ -1,14 +1,16 @@
-@import "body";
-@import "header";
-@import "page-main.scss";
+@import "../scaffolding";
+@import "visually-hidden";
+@import "page-header";
+@import "main-nav.scss";
+@import "page-main";
 @import "catalog-menu";
 @import "best-goods";
 @import "about-us";
 @import "reviews";
 @import "contacts";
-@import "page-main__map";
-@import "page-footer__social";
-@import "page-footer__copyright";
+@import "map";
+@import "page-footer";
+@import "button";
 
 /*------Catalog-----*/
 @import "page-main__intro";

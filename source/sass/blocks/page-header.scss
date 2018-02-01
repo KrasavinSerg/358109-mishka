@@ -1,0 +1,35 @@
+.page-header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  background: #ffffff;
+  // border: 1px solid red;
+  border-top: 1px solid #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.page-header__logo-image {
+  display: block;
+  margin: 23px auto;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    width: 768px;
+  }
+
+  .page-header__logo-image {
+    margin-left: 50px;
+    margin-right: 150px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+

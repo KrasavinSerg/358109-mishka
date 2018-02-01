@@ -1,5 +1,7 @@
 .best-goods {
-  border: 2px solid green;
+  width: 260px;
+  margin: 0 auto;
+  // border: 2px solid green;
   padding: 32px 30px;
   background-color: #ffffff;
 }
@@ -41,6 +43,21 @@
   margin-bottom: 36px;
 }
 
+.best-goods__type {
+  width: 100px;
+  border-bottom: 2px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.best-goods__value {
+  margin-left: 0;
+  width: 160px;
+  border-bottom: 2px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .best-goods__image {
   margin-bottom: 25px;
 }
@@ -55,16 +72,11 @@
   text-align: center;
 }
 
-.best-goods__order {
-  display: block;
-  border: 2px solid #444444;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  text-decoration: none;
-  color: #444444;
-  text-transform: uppercase;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
+.best-goods__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.best-goods__button-order {
+  color: #ffffff;
 }

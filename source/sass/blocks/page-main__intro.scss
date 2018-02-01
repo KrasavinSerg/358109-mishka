@@ -1,4 +1,6 @@
 .page-main__intro {
+  width: 320px;
+  margin: 0 auto;
   background-color: #f1f1f1;
 }
 
@@ -8,7 +10,18 @@
   padding-bottom: 80px;
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 30px;
   font-size: 27px;
+  line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: 786px) {
+  .page-main__intro {
+    width: 768px;
+  }
+
+  .page-main__intro-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

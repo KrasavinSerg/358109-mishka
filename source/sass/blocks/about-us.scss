@@ -1,0 +1,111 @@
+.about-us {
+  width: 260px;
+  margin: 0 auto;
+  // border: 1px solid red;
+  padding: 32px 30px;
+  background-color: #ffffff;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 32px;
+  color: #000000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.about-us__list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about-us__text {
+  position: relative;
+  padding-top: 60px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.about-us__text--eco:before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 37px;
+  top: 0px;
+  background: url(../../img/icon-feature-flower.svg) no-repeat;
+}
+
+.about-us__text--price:before {
+  position: absolute;
+  content: "";
+  width: 47px;
+  height: 27px;
+  top: 0px;
+  background: url(../../img/icon-feature-money.svg) no-repeat;
+}
+
+.about-us__text--like:before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 27px;
+  top: 0px;
+  background: url(../../img/icon-feature-heart.svg) no-repeat;
+}
+
+.about-us__text--handmade:before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 34px;
+  top: 0px;
+  background: url(../../img/icon-feature-ball.svg) no-repeat;
+}
+
+.about-us__text--manufacturer:before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 23px;
+  top: 0px;
+  background: url(../../img/icon-feature-rocket.svg) no-repeat;
+}
+
+.about-us__text--packing:before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 32px;
+  top: 0px;
+  background: url(../../img/icon-feature-gift.svg) no-repeat;
+}
+
+.reviews-button-wrapper {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__prev {
+  width: 130px;
+  height: 51px;
+  font-size: 0;
+  background: none;
+  border: 2px solid #ececec;
+  background: url(../../img/icon-left-arrow.svg) no-repeat center;
+}
+
+.reviews__next {
+  margin-left: -1px;
+  width: 131px;
+  height: 51px;
+  font-size: 0;
+  background: none;
+  border: 2px solid #ececec;
+  background: url(../../img/icon-right-arrow.svg) no-repeat center;
+}
