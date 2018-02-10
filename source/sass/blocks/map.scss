@@ -2,5 +2,12 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  // width: 100%;
+  outline: 1px solid green;
+}
+
+@media (min-width: 768px) {
+  .map {
+    width: 768px;
+    height: 455px;
+  }
 }

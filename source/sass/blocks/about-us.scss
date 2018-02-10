@@ -1,15 +1,15 @@
 .about-us {
   width: 260px;
   margin: 0 auto;
-  // border: 1px solid red;
   padding: 32px 30px;
-  background-color: #ffffff;
+  background-color: $white;
+  outline: 1px solid red;
 }
 
 .about-us__title {
   margin: 0;
   margin-bottom: 32px;
-  color: #000000;
+  color: $black;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -23,89 +23,125 @@
 
 .about-us__text {
   position: relative;
-  padding-top: 60px;
+  padding-top: 56px;
   margin: 0;
-  margin-bottom: 32px;
-  color: #000000;
+  margin-bottom: 28px;
+  color: $black;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  &--eco::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 37px;
+    top: 0;
+    background: url("../../img/icon-feature-flower.svg") no-repeat;
+  }
+
+  &--price::before {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 27px;
+    top: 0;
+    background: url("../../img/icon-feature-money.svg") no-repeat;
+  }
+
+  &--like::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 28px;
+    top: 4px;
+    background: url("../../img/icon-feature-heart.svg") no-repeat;
+  }
+
+  &--handmade::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 34px;
+    top: 0;
+    background: url("../../img/icon-feature-ball.svg") no-repeat;
+  }
+
+  &--manufacturer::before {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 23px;
+    top: 0;
+    background: url("../../img/icon-feature-rocket.svg") no-repeat;
+  }
+
+  &--packing::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 32px;
+    top: 0;
+    background: url("../../img/icon-feature-gift.svg") no-repeat;
+  }
 }
 
-.about-us__text--eco:before {
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 37px;
-  top: 0px;
-  background: url(../../img/icon-feature-flower.svg) no-repeat;
+@media (min-width: 768px) {
+  .about-us {
+    width: 668px;
+    padding-top: 57px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    width: 50%;
+  }
+
+  .about-us__text {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 65px;
+  }
 }
 
-.about-us__text--price:before {
-  position: absolute;
-  content: "";
-  width: 47px;
-  height: 27px;
-  top: 0px;
-  background: url(../../img/icon-feature-money.svg) no-repeat;
-}
+@media (min-width: 1150px) {
+  .about-us {
+    width: 1050px;
+  }
 
-.about-us__text--like:before {
-  position: absolute;
-  content: "";
-  width: 34px;
-  height: 27px;
-  top: 0px;
-  background: url(../../img/icon-feature-heart.svg) no-repeat;
-}
+  .about-us__title {
+    margin: 0;
+    margin-bottom: 50px;
+    padding-left: 125px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 
-.about-us__text--handmade:before {
-  position: absolute;
-  content: "";
-  width: 35px;
-  height: 34px;
-  top: 0px;
-  background: url(../../img/icon-feature-ball.svg) no-repeat;
-}
+  .about-us__text {
+    &--eco {
+      padding-left: 125px;
+    }
 
-.about-us__text--manufacturer:before {
-  position: absolute;
-  content: "";
-  width: 55px;
-  height: 23px;
-  top: 0px;
-  background: url(../../img/icon-feature-rocket.svg) no-repeat;
-}
+    &--price {
+      padding-left: 125px;
+    }
 
-.about-us__text--packing:before {
-  position: absolute;
-  content: "";
-  width: 33px;
-  height: 32px;
-  top: 0px;
-  background: url(../../img/icon-feature-gift.svg) no-repeat;
-}
-
-.reviews-button-wrapper {
-  display: flex;
-  margin-bottom: 38px;
-}
-
-.reviews__prev {
-  width: 130px;
-  height: 51px;
-  font-size: 0;
-  background: none;
-  border: 2px solid #ececec;
-  background: url(../../img/icon-left-arrow.svg) no-repeat center;
-}
-
-.reviews__next {
-  margin-left: -1px;
-  width: 131px;
-  height: 51px;
-  font-size: 0;
-  background: none;
-  border: 2px solid #ececec;
-  background: url(../../img/icon-right-arrow.svg) no-repeat center;
+    &--like {
+      padding-left: 125px;
+    }
+  }
 }

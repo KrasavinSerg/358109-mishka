@@ -1,8 +1,7 @@
 .manufacture {
   width: 260px;
   margin: 0 auto;
-  // border: 1px solid red;
-  background-color: #ffffff;
+  background-color: $white;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 24px;
@@ -11,7 +10,7 @@
 
 .manufacture__wrapper {
   position: relative;
-  border: 1px solid #ececec;
+  border: 1px solid $border;
 }
 
 .manufacture__item-image {
@@ -19,24 +18,25 @@
 }
 
 .manufacture__title {
+  position: relative;
   margin: 0;
   padding-top: 25px;
   padding-left: 90px;
   padding-bottom: 24px;
-  color: #000000;
+  color: $black;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-}
 
-.manufacture__title:before {
-  position: absolute;
-  content: "";
-  left: 35px;
-  top: 35px;
-  width: 32px;
-  height: 22px;
-  background: url(../../img/icon-video.svg) no-repeat center;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 35px;
+    top: 35px;
+    width: 32px;
+    height: 22px;
+    background: url("../../img/icon-video.svg") no-repeat center;
+  }
 }
 
 .manufacture__text {
@@ -44,20 +44,20 @@
   padding-left: 34px;
   padding-top: 30px;
   margin-bottom: 28px;
-  color: #444444;
+  color: $dark-grey;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.manufacture__video:before {
+.manufacture__video::before {
   position: absolute;
   content: "";
   top: 135px;
   left: 80px;
   width: 101px;
   height: 77px;
-  background: url(../../img/icon-play.svg) no-repeat center;
+  background: url("../../img/icon-play.svg") no-repeat center;
 }
 
 .manufacture__order {
@@ -65,5 +65,50 @@
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 17px;
-  line-height: 16px
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .manufacture {
+    width: 668px;
+    padding: 50px;
+  }
+
+  .manufacture__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manufacture__video {
+    order: -1;
+
+    &::before {
+      top: 190px;
+      left: 280px;
+    }
+  }
+
+  .manufacture__item-image {
+    width: 100%;
+  }
+
+  .manufacture__title {
+    font-size: 20px;
+
+    &::before {
+      left: 35px;
+      top: 25px;
+    }
+  }
+
+  .manufacture__text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 44px;
+  }
+
+  .manufacture__order {
+    width: 580px;
+    margin-bottom: 45px;
+  }
 }

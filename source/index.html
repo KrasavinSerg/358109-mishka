@@ -5,12 +5,11 @@
   <title>Mishka-index</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--logo">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип мишка">
@@ -22,11 +21,14 @@
           <a class="main-nav__item-link" href="#">Вязание на заказ</a>
         </li>
         <li class="main-nav__item  main-nav__item--search">
-          <a class="main-nav__item-link" href="#">Поиск</a>
+          <a class="main-nav__item-link" href="#">Поиск по сайту</a>
         </li>
         <li class="main-nav__item  main-nav__item--cart">
           <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
         </li>
+        <li class="main-nav__item  main-nav__item--new">Новые поступления</li>
+        <li class="main-nav__item  main-nav__item--sale">Распродажа</li>
+        <li class="main-nav__item  main-nav__item--delivery">Бесплатная доставка по России</li>
       </ul>
     </nav>
   </header>
@@ -53,58 +55,76 @@
     </section>
 
     <article class="best-goods">
-      <h2 class="best-goods__name">Вязаные корзинки</h2>
-      <p class="best-goods__title">Товар недели</p>
-      <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <dl class="best-goods__info">
-        <dt class="best-goods__type">Цвет:</dt>
-          <dd class="best-goods__value">«Тиффани»/серый</dd>
-        <dt class="best-goods__type">Диаметр:</dt>
-          <dd class="best-goods__value">25 см</dd>
-        <dt class="best-goods__type">Высота:</dt>
-          <dd class="best-goods__value">15 см</dd>
-      </dl>
-      <img class="best-goods__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-      <p class="best-goods__price">Цена: 990 руб.</p>
-      <a class="best-goods__button-order  button" href="#">Зказать</a>
+      <div class="best-goods__wrapper-title">
+        <h2 class="best-goods__name">Вязаные корзинки</h2>
+        <p class="best-goods__title">Товар недели</p>
+      </div>
+      <div class="best-goods__wrapper">
+        <div class="best-goods__wrapper-info">
+          <p class="best-goods__description">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="best-goods__info">
+            <dt class="best-goods__type">Цвет:</dt>
+              <dd class="best-goods__value">«Тиффани»/серый</dd>
+            <dt class="best-goods__type">Диаметр:</dt>
+              <dd class="best-goods__value">25 см</dd>
+            <dt class="best-goods__type">Высота:</dt>
+              <dd class="best-goods__value">15 см</dd>
+          </dl>
+        </div>
+        <div class="best-goods__wrapper-image">
+          <img class="best-goods__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        </div>
+        <div class="best-goods__wrapper-prise">
+          <p class="best-goods__price">Цена: 990 руб.</p>
+          <a class="best-goods__button-order  button" href="#">Зказать</a>
+        </div>
+    </div>
     </article>
 
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
+      <div class="about-us__wrapper">
       <ul class="about-us__list">
         <li class="about-us__item">
-          <p class="about-us__text  about-us__text--eco">Экологически чистые материалы</p>
+          <p class="about-us__text  about-us__text--eco">Экологически<br> чистые материалы</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__text  about-us__text--price">Скандинавский стиль по российской цене</p>
+          <p class="about-us__text  about-us__text--price">Скандинавский стиль<br> по российской цене</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__text  about-us__text--like">Увеличивает лайки на фотографиях</p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text  about-us__text--handmade">Связано вручную с любовью и умилением</p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text  about-us__text--manufacturer">Поддержка отечественного производителя</p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text  about-us__text--packing">Поставляется в подарочной упаковке</p>
+          <p class="about-us__text  about-us__text--like">Увеличивает лайки<br> на фотографиях</p>
         </li>
       </ul>
+      <ul class="about-us__list">
+        <li class="about-us__item">
+          <p class="about-us__text  about-us__text--handmade">Связано вручную с<br> любовью и умилением</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text  about-us__text--manufacturer">Поддержка отечественного<br> производителя</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__text  about-us__text--packing">Поставляется в<br> подарочной упаковке</p>
+        </li>
+      </ul>
+      </div>
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <blockquote class="reviews__item">
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="reviews__author">Анастасия Красильникова</p>
-        <p class="reviews__contact">@misssssiskras</p>
-      </blockquote>
-      <div class="reviews-button-wrapper">
-        <button class="reviews__prev" type="button">назад</button>
-        <button class="reviews__next" type="button">вперед</button>
+      <div class="reviews__wrapper-left">
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote class="reviews__item">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews__author">Анастасия Красильникова</p>
+          <p class="reviews__contact">@misssssiskras</p>
+        </blockquote>
       </div>
-      <a class="reviews__button-write  button" href="#">Hаписать</a>
+      <div class="reviews__wrapper-right">
+        <div class="reviews-button-wrapper">
+          <button class="reviews__prev" type="button">назад</button>
+          <button class="reviews__next" type="button">вперед</button>
+        </div>
+        <a class="reviews__button-write  button" href="#">Hаписать</a>
+      </div>
     </section>
 
     <section class="contacts">
@@ -127,6 +147,11 @@
   </main>
 
   <footer class="page-footer">
+    <section class="page-footer__logo">
+      <h2 class="visually-hidden">Логотип</h2>
+      <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотам">
+    </section>
+
     <section class="page-footer__social">
       <h2 class="visually-hidden">Мы в соц сетях</h2>
       <ul class="page-footer__social-list">

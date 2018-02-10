@@ -2,16 +2,23 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
-  background: #ffffff;
-  border-top: 1px solid #ffffff;
+  background: $white;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
+  /*outline: 1px solid green;*/
 }
 
 @media (min-width: 768px) {
   .page-header {
     width: 768px;
-    height: 92px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1150px;
+    /*height: 70px;*/
   }
 }
