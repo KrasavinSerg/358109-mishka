@@ -1,0 +1,134 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  width: 260px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.page-footer__social-list {
+  display: flex;
+  width: 140px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.page-footer__social-item {
+  display: flex;
+  list-style: none;
+}
+
+.page-footer__social-link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 400;
+
+  &--insta {
+    width: 22px;
+    height: 21px;
+    font-size: 0;
+    background: url("../../img/icon-insta.svg") no-repeat center;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+    font-size: 0;
+    background: url("../../img/icon-fb.svg") no-repeat center;
+  }
+
+  &--tw {
+    width: 23px;
+    height: 20px;
+    font-size: 0;
+    background: url("../../img/icon-twitter.svg") no-repeat center;
+  }
+}
+
+.page-footer__copyright {
+  background-color: #f1f1f1;
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  padding: 30px;
+  padding-left: 70px;
+  padding-right: 18px;
+  color: $black;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 35px;
+  font-size: 0;
+  text-decoration: none;
+  background: url("../../img/htmlacademy.svg") no-repeat center;
+  background-size: 150%;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 190px;
+    margin-right: auto;
+  }
+
+  .page-footer__social {
+    width: 140px;
+    margin: 0;
+    margin-right: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    border: none;
+  }
+
+  .page-footer__copyright-text {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer {
+    width: 1050px;
+  }
+
+  .page-footer__logo {
+    width: 190px;
+    display: block;
+    margin-right: auto;
+  }
+
+  .page-footer__social {
+    margin-right: auto;
+  }
+
+  .page-footer__copyright-text {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,152 @@
+.reviews {
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 30px 45px;
+  background-color: $white;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 23px;
+  color: $black;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 26px;
+  color: $dark-grey;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.reviews__author {
+  margin: 0;
+  margin-bottom: 2px;
+  color: $black;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.reviews__contact {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $dark-grey;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.reviews-button-wrapper {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__prev {
+  width: 130px;
+  height: 51px;
+  font-size: 0;
+  border: 2px solid $border;
+  background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.reviews__next {
+  margin-left: -1px;
+  width: 131px;
+  height: 51px;
+  font-size: 0;
+  border: 2px solid $border;
+  background: url("../../img/icon-right-arrow.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.reviews__button-write {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 668px;
+    padding-top: 72px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reviews__wrapper-right {
+    display: flex;
+    width: 176px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-left: -190px;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .reviews__text {
+    width: 668px;
+    font-size: 17px;
+    margin-bottom: 38px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .reviews__contact {
+    margin-bottom: 56px;
+  }
+
+  .reviews__button-write {
+    width: auto;
+  }
+
+  .reviews__prev {
+    border: none;
+  }
+
+  .reviews__next {
+    border: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    width: 1050px;
+  }
+
+  .reviews__wrapper-left {
+    padding-left: 125px;
+  }
+
+  .reviews__wrapper-right {
+    margin-right: 50px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__text {
+    width: 790px;
+    font-size: 17px;
+  }
+}
