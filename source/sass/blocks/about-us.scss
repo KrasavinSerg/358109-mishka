@@ -30,6 +30,10 @@
   line-height: 20px;
   font-weight: 700;
 
+  &--flower {
+    padding-right: 63px;
+  }
+
   &--flower::before {
     position: absolute;
     content: "";
@@ -37,6 +41,10 @@
     height: 37px;
     top: 0;
     background: url("../../img/icon-feature-flower.svg") no-repeat;
+  }
+
+  &--money {
+    padding-right: 40px;
   }
 
   &--money::before {
@@ -48,6 +56,10 @@
     background: url("../../img/icon-feature-money.svg") no-repeat;
   }
 
+  &--heart {
+    padding-right: 55px;
+  }
+
   &--heart::before {
     position: absolute;
     content: "";
@@ -55,6 +67,10 @@
     height: 28px;
     top: 4px;
     background: url("../../img/icon-feature-heart.svg") no-repeat;
+  }
+
+  &--ball {
+    padding-right: 10px;
   }
 
   &--ball::before {
@@ -73,6 +89,10 @@
     height: 23px;
     top: 0;
     background: url("../../img/icon-feature-rocket.svg") no-repeat;
+  }
+
+  &--gift {
+    padding-right: 20px;
   }
 
   &--gift::before {
@@ -114,6 +134,30 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 65px;
+
+    &--flower {
+      padding-right: 110px;
+    }
+
+    &--money {
+      padding-right: 70px;
+    }
+
+    &--heart {
+      padding-right: 100px;
+    }
+
+    &--ball {
+      padding-right: 40px;
+    }
+
+    &--rocket {
+      /*padding-right: 40px;*/
+    }
+
+    &--gift {
+      padding-right: 40px;
+    }
   }
 }
 
@@ -131,16 +175,31 @@
   }
 
   .about-us__item {
-    &--eco {
+    &--flower {
       padding-left: 125px;
+      padding-right: 110px;
     }
 
-    &--price {
+    &--money {
       padding-left: 125px;
+      padding-right: 70px;
     }
 
-    &--like {
+    &--heart {
       padding-left: 125px;
+      padding-right: 100px;
+    }
+
+    &--ball {
+      padding-right: 230px;
+    }
+
+    &--rocket {
+      padding-right: 70px;
+    }
+
+    &--gift {
+      padding-right: 130px;
     }
   }
 }

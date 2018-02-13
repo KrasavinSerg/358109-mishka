@@ -5,6 +5,11 @@
   background-color: $white;
 }
 
+.reviews__list {
+  padding-left: 0;
+  list-style: none;
+}
+
 .reviews__title {
   margin: 0;
   margin-bottom: 23px;
@@ -14,7 +19,7 @@
   font-weight: 700;
 }
 
-.reviews__item {
+.reviews__quote {
   margin: 0;
 }
 

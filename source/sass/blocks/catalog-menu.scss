@@ -45,6 +45,7 @@
 }
 
 .catalog-menu__link {
+  display: block;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 30px;
@@ -54,10 +55,6 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-}
-
-.catalog-menu__link {
-  display: block;
   text-decoration: none;
 }
 

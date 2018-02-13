@@ -2,9 +2,8 @@
   width: 260px;
   margin: 0 auto;
   background-color: $white;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding: 30px;
+  padding-bottom: 1px;
 }
 
 .catalog__item-image {
@@ -17,6 +16,7 @@
 }
 
 .catalog__item {
+  margin-bottom: 30px;
   border: 1px solid $border;
 }
 
@@ -50,17 +50,18 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
-  border-bottom: 1px solid $border;
 }
 
 .catalog__item-price-wrapper {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $border;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .catalog__item-price {
   margin: 0;
-  padding-bottom: 21px;
   color: $black;
   font-size: 15px;
   line-height: 24px;
@@ -81,10 +82,6 @@
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .catalog__list {
-    margin-bottom: 55px;
   }
 
   .catalog__item {
@@ -122,8 +119,21 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 0;
+  }
+
+  .catalog__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 0;
+    list-style: none;
+
+    /*&:last-child {
+      margin-bottom: 0;
+    }*/
   }
 
   .catalog__item-image {
@@ -138,18 +148,11 @@
     width: 316px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
-  .catalog__list {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-left: 0;
-    list-style: none;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .catalog__item-description {
+    min-height: 150px;
   }
 
   .catalog__item-name {
@@ -165,19 +168,17 @@
   .catalog__item-value {
     width: 260px;
     margin: 0;
-    margin-bottom: 25px;
-    padding-bottom: 21px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
     color: $dark-grey;
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
-    border-bottom: 1px solid $border;
   }
 
   .catalog__item-price {
     vertical-align: top;
     margin: 0;
-    padding-bottom: 21px;
     color: $black;
     font-size: 17px;
     line-height: 24px;
@@ -185,7 +186,7 @@
   }
 
   .catalog__item-cart {
-    vertical-align: top;
+    display: block;
     width: 20px;
     height: 19px;
     font-size: 0;

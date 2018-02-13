@@ -1,11 +1,11 @@
-.contacts {
+.location {
   width: 320px;
   margin: 0 auto;
   border-bottom: 1px solid $white;
   background-color: $white;
 }
 
-.contacts__title {
+.location__contacts-title {
   margin: 0;
   padding: 33px 30px;
   color: $black;
@@ -14,7 +14,7 @@
   font-weight: 700;
 }
 
-.contacts__list {
+.location__contacts-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -26,7 +26,7 @@
   font-weight: 400;
 }
 
-.contacts__text {
+.location__contacts-text {
   width: 180px;
   margin-left: 0;
   margin-bottom: 33px;
@@ -46,19 +46,26 @@
   }
 }
 
-.contacts__type {
+.location__contacts-type {
   margin-bottom: 33px;
   width: 77px;
 }
 
-.contacts__button {
+.location__map--iframe {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  border: none;
+}
+
+.location__button {
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 40px auto;
 }
 
 @media (min-width: 768px) {
-  .contacts {
+  .location {
     position: relative;
     width: 768px;
 
@@ -73,29 +80,34 @@
     }
   }
 
-  .contacts__title {
+  .location__contacts-title {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  .contacts__list {
+  .location__contacts-list {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .contacts__text {
+  .location__contacts-text {
     width: 255px;
   }
 
-  .contacts__button {
+  .location__map--iframe {
+    width: 768px;
+    height: 457px;
+  }
+
+  .location__button {
     width: 228px;
   }
 }
 
 @media (min-width: 1150px) {
-  .contacts {
+  .location {
     width: 975px;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +124,7 @@
     }
   }
 
-  .contacts__title {
+  .location__contacts-title {
     padding: 0;
     padding-top: 70px;
     margin-bottom: 50px;
@@ -120,16 +132,17 @@
     line-height: 57px;
   }
 
-  .contacts__list {
+  .location__contacts-list {
     width: 350px;
     padding: 0;
   }
 
-  .page-main__map {
+  .location__map--iframe {
     width: 525px;
+    height: 457px;
   }
 
-  .contacts__button {
+  .location__button {
     width: 230px;
     margin-left: 0;
     margin-top: -54px;
