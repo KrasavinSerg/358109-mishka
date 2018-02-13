@@ -76,6 +76,15 @@
 .best-goods__button-order {
   padding-top: 13px;
   padding-bottom: 13px;
+
+  &:hover {
+    background-color: $dark-grey;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -121,7 +130,7 @@
     width: 334px;
   }
 
-  .best-goods__wrapper-prise {
+  .best-goods__wrapper-price {
     margin-top: -110px;
   }
 }
@@ -175,7 +184,7 @@
     width: 200px;
   }
 
-  .best-goods__wrapper-prise {
+  .best-goods__wrapper-price {
     width: 300px;
   }
 

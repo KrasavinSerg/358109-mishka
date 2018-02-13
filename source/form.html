@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Mishka-form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
@@ -12,25 +12,31 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--logo">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+          <a href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+          </a>
         </li>
         <li class="main-nav__item  main-nav__item--catalog">
-          <a class="main-nav__item-link" href="#">Каталог товаров</a>
+          <a class="main-nav__item-link  main-nav__item-link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item  main-nav__item--order">
-          <a class="main-nav__item-link" href="#">Вязание на заказ</a>
+          <a class="main-nav__item-link  main-nav__item-link--order" href="#">Вязание на заказ</a>
         </li>
         <li class="main-nav__item  main-nav__item--search">
-          <a class="main-nav__item-link" href="#">Поиск</a>
+          <a class="main-nav__item-link" href="#">Поиск по сайту</a>
         </li>
         <li class="main-nav__item  main-nav__item--cart">
-          <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__item-link  main-nav__item-link--cart" href="#">Корзина: пока пуста</a>
         </li>
-        <li class="main-nav__item  main-nav__item--new">Новые поступления</li>
-        <li class="main-nav__item  main-nav__item--sale">Распродажа</li>
-        <li class="main-nav__item  main-nav__item--delivery">Бесплатная доставка по России</li>
+        <li class="main-nav__item  main-nav__item--new">
+          <a class="main-nav__item-link  main-nav__item-link--new" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--sale">
+          <a class="main-nav__item-link  main-nav__item-link--sale" href="#">Распродажа</a>
+        </li>
       </ul>
     </nav>
+    <!-- <p class="main-nav__item  main-nav__item--delivery">Бесплатная доставка по России</p> -->
   </header>
 
   <main class="page-main">
@@ -129,7 +135,9 @@
   <footer class="page-footer">
     <section class="page-footer__logo">
       <h2 class="visually-hidden">Логотип</h2>
-      <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотам">
+      <a href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотам">
+      </a>
     </section>
 
     <section class="page-footer__social">

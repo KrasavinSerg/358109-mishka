@@ -28,21 +28,25 @@
 }
 
 .reviews__author {
+  display: block;
   margin: 0;
   margin-bottom: 2px;
   color: $black;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  font-style: normal;
 }
 
 .reviews__contact {
+  display: block;
   margin: 0;
   margin-bottom: 30px;
   color: $dark-grey;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
+  font-style: normal;
 }
 
 .reviews-button-wrapper {

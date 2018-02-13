@@ -29,11 +29,25 @@
 .contacts__text {
   width: 180px;
   margin-left: 0;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
+
+  &--e-mail {
+    text-decoration: underline;
+    text-decoration-color: $light-green;
+    cursor: pointer;
+
+    &:hover {
+      color: $light-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__type {
-  padding-bottom: 33px;
+  margin-bottom: 33px;
   width: 77px;
 }
 
