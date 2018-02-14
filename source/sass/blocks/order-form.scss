@@ -17,6 +17,12 @@
   font-weight: 400;
 }
 
+.order-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .order-form__list {
   list-style: none;
   padding-left: 0;
@@ -151,7 +157,7 @@
 .order-form__input-tel {
   position: relative;
   display: block;
-  width: 230px;
+  width: 260px;
   height: 42px;
   font-size: 17px;
   line-height: 18px;
@@ -166,16 +172,6 @@
     color: $dark-grey;
     opacity: 0.3;
   }
-
-  /*&::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 24px;
-    border: 1px solid red;
-    top: 20px;
-    background: url("../../img/icon-phone.svg") no-repeat center;
-  }*/
 }
 
 .order-form__label-tel {
@@ -304,13 +300,11 @@
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 30px;
-    /*outline: 1px solid red;*/
   }
 
   .order-form__wrpper-type {
     display: flex;
     padding-top: 25px;
-    /*outline: 1px solid green;*/
   }
 
   .order-form__titel {
