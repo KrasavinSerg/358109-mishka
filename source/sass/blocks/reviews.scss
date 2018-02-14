@@ -95,7 +95,12 @@
   }
 
   .reviews__wrapper-left {
-    background: url("../../img/review@1x.jpg") no-repeat;
+    background:  url("../../img/review@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../../img/review@2x.jpg") no-repeat;
+      background-size: 350px auto;
+    }
   }
 
   .reviews__wrapper-right {
