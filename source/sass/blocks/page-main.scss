@@ -44,14 +44,14 @@
   }
 
   .page-main__title {
-    padding-top: 163px;
-    padding-bottom: 310px;
+    padding-top: 188px;
+    padding-bottom: 375px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .page-main__image {
-    background-size: 120%;
+    background: $light-grey url("../../img/hero-tablet@1x.jpg") no-repeat center  34px;
   }
 
   .page-main__intro {
@@ -74,9 +74,13 @@
 
   .page-main__title {
     padding-top: 190px;
-    padding-bottom: 460px;
+    padding-bottom: 370px;
     font-size: 57px;
     line-height: 53px;
+  }
+
+  .page-main__image {
+    background: $light-grey url("../../img/hero-desktop@1x.jpg") no-repeat center 40px;
   }
 
   .page-main__intro {
