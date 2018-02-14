@@ -34,6 +34,9 @@
 @media (min-width: 1150px) {
   .page-header {
     width: 1150px;
-    /*height: 70px;*/
+  }
+
+  .page-header__logo-image {
+    height: 80px;
   }
 }

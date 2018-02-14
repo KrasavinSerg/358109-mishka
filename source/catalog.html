@@ -47,7 +47,11 @@
       <h2 class="visually-hidden">Карточка товара</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__item-image" src="img/photo-hare-mobile@1x.jpg" alt="зайчик">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="catalog__item-image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg" alt="зайчик">
+          </picture>
           <div class="catalog__item-info">
             <div class="catalog__item-description">
               <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
@@ -61,7 +65,11 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__item-image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="catalog__item-image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg" alt="Корзинка для белья">
+          </picture>
           <div class="catalog__item-info">
             <div class="catalog__item-description">
               <h3 class="catalog__item-name">Корзинка для белья</h3>
@@ -75,7 +83,11 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__item-image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="catalog__item-image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg" alt="Большая корзинка для игрушек">
+          </picture>
           <div class="catalog__item-info">
             <div class="catalog__item-description">
               <h3 class="catalog__item-name">Большая корзинка для игрушек</h3>
@@ -94,7 +106,11 @@
       <div class="manufacture__wrapper">
         <h2 class="manufacture__title">Процесс производства</h2>
         <div class="manufacture__video">
-          <img class="manufacture__item-image" src="img/video-mobile@1x.jpg" alt="видео">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="manufacture__item-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="видео">
+        </picture>
         </div>
         <div class="manufacture__wrapper-order">
           <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -155,5 +171,7 @@
     </form>
   </article>
 
+<script src="js/picturefill.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
 </body>
 </html>
