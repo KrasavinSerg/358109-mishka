@@ -5,6 +5,10 @@
   background-color: $white;
 }
 
+.best-goods__zigzag-fill {
+  display: none;
+}
+
 .best-goods__name {
   margin: 0;
   margin-bottom: 5px;
@@ -87,13 +91,25 @@
   }
 }
 
+.best-goods__zigzag {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .best-goods {
+    position: relative;
     width: 668px;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+  }
+
+  .best-goods__zigzag-fill {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -20px;
   }
 
   .best-goods__wrapper-title {
@@ -159,6 +175,14 @@
   .best-goods__button-order {
     width: 285px;
     padding-top: 15px;
+  }
+
+  .best-goods__zigzag {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
   }
 }
 

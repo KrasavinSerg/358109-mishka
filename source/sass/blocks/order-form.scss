@@ -52,7 +52,7 @@
   display: none;
 }
 
-.order-form__input-type ~ .order-form__label-type {
+.order-form__label-type {
   display: block;
   position: relative;
   font-size: 17px;
@@ -318,7 +318,7 @@
     }
   }
 
-  .order-form__input-type ~ .order-form__label-type {
+  .order-form__label-type {
     padding-left: 80px;
     margin-bottom: 58px;
 
@@ -327,6 +327,14 @@
       height: 45px;
       top: -13px;
       left: 0;
+    }
+
+    &:hover::before {
+      border: 2px solid $light-green;
+    }
+
+    &:active::before {
+      border: 2px solid #c7c7c7;
     }
   }
 
@@ -358,6 +366,14 @@
       height: 48px;
       top: -12px;
       left: 0;
+    }
+
+    &:hover::before {
+      border: 2px solid $light-green;
+    }
+
+    &:active::before {
+      border: 2px solid #c7c7c7;
     }
   }
 
@@ -428,6 +444,10 @@
       opacity: 0.3;
       padding-left: 15px;
     }
+
+    &:hover {
+      border-bottom: 2px solid $light-green;
+    }
   }
 
   .order-form__list--contacts {
@@ -463,6 +483,10 @@
       opacity: 0.3;
       padding-left: 15px;
     }
+
+    &:hover {
+      border-bottom: 2px solid $light-green;
+    }
   }
 
   .order-form__item-e-mail {
@@ -493,6 +517,10 @@
       line-height: 18px;
       opacity: 0.3;
       padding-left: 15px;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $light-green;
     }
   }
 
@@ -527,6 +555,10 @@
       font-size: 19px;
       line-height: 18px;
       opacity: 0.3;
+    }
+
+    &:hover {
+      border: 2px solid $light-green;
     }
   }
 

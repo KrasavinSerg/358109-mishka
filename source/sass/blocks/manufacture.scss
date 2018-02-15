@@ -60,6 +60,10 @@
   background: url("../../img/icon-play.svg") no-repeat center;
 }
 
+.manufacture__video:hover::before {
+  transform: scale(1.2);
+}
+
 .manufacture__order {
   width: 190px;
   margin: 0 auto;
@@ -104,7 +108,7 @@
 
   .manufacture__text {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 30px;
     padding-left: 41px;
     padding-right: 41px;
     margin-bottom: 44px;

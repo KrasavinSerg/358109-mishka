@@ -59,6 +59,10 @@
   font-weight: 700;
   margin-bottom: 30px;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
 }
 
 .modal__button {
