@@ -1,7 +1,9 @@
 .reviews {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding: 20px 30px 45px;
+  padding-top: 0;
   background-color: $white;
 }
 
@@ -64,8 +66,17 @@
   height: 51px;
   font-size: 0;
   border: 2px solid $border;
-  background: url("../../img/icon-left-arrow.svg") no-repeat center;
   cursor: pointer;
+}
+
+.reviews__icon-left-arrow {
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 .reviews__next {
@@ -74,17 +85,31 @@
   height: 51px;
   font-size: 0;
   border: 2px solid $border;
-  background: url("../../img/icon-right-arrow.svg") no-repeat center;
   cursor: pointer;
+}
+
+.reviews__icon-right-arrow {
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 .reviews__button-write {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 12px;
 }
 
-.best-goods__zigzag {
-  display: none;
+.reviews__zigzag {
+  width: 320px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
@@ -95,7 +120,7 @@
     flex-wrap: wrap;
     width: 768px;
     padding: 0;
-    padding-top: 72px;
+    padding-top: 0;
     padding-bottom: 80px;
     padding-left: 0;
   }
@@ -151,6 +176,15 @@
   .reviews__button-write {
     margin-top: 75px;
     width: auto;
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .reviews__prev {
@@ -161,8 +195,8 @@
     border: none;
   }
 
-  .best-goods__zigzag {
-    display: block;
+  .reviews__zigzag {
+    width: 768px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -176,6 +210,7 @@
   }
 
   .reviews__wrapper-left {
+    margin-left: 50px;
     padding-left: 125px;
   }
 
@@ -191,5 +226,23 @@
   .reviews__text {
     width: 790px;
     font-size: 17px;
+    margin-bottom: 37px;
+  }
+
+  .reviews__contact {
+    margin-bottom: 95px;
+  }
+
+  .reviews-button-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .reviews__button-write {
+    margin-top: 82px;
+  }
+
+  .reviews__zigzag {
+    width: 1050px;
+    left: 50px;
   }
 }

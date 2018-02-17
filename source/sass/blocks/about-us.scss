@@ -1,7 +1,10 @@
 .about-us {
   width: 260px;
   margin: 0 auto;
-  padding: 32px 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   background-color: $white;
 }
 
@@ -24,7 +27,7 @@
   position: relative;
   padding-top: 56px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   color: $black;
   font-size: 17px;
   line-height: 20px;
@@ -108,7 +111,7 @@
 @media (min-width: 768px) {
   .about-us {
     width: 668px;
-    padding-top: 67px;
+    padding-top: 48px;
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
@@ -164,30 +167,31 @@
 @media (min-width: 1150px) {
   .about-us {
     width: 1050px;
+    padding-top: 60px;
   }
 
   .about-us__title {
     margin: 0;
     margin-bottom: 50px;
-    padding-left: 125px;
+    padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .about-us__item {
     &--flower {
-      padding-left: 125px;
-      padding-right: 110px;
+      padding-left: 175px;
+      padding-right: 120px;
     }
 
     &--money {
-      padding-left: 125px;
-      padding-right: 70px;
+      padding-left: 175px;
+      padding-right: 90px;
     }
 
     &--heart {
-      padding-left: 125px;
-      padding-right: 100px;
+      padding-left: 175px;
+      padding-right: 110px;
     }
 
     &--ball {
@@ -199,7 +203,7 @@
     }
 
     &--gift {
-      padding-right: 130px;
+      padding-right: 230px;
     }
   }
 }

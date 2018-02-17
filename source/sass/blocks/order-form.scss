@@ -5,7 +5,11 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 22px;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
+}
+
+.order-form__zigzag-fill {
+  display: none;
 }
 
 .order-form__text {
@@ -36,7 +40,7 @@
   font-weight: 700;
   color: $light-green;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   &::after {
     position: absolute;
@@ -88,6 +92,10 @@
   }
 }
 
+.order-form__wrpper-color {
+  padding-top: 20px;
+}
+
 .order-form__input-color {
   display: none;
 }
@@ -98,7 +106,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  padding-left: 60px;
+  padding-left: 61px;
   padding-right: 40px;
   margin-bottom: 43px;
   cursor: pointer;
@@ -106,8 +114,8 @@
   &::before {
     position: absolute;
     content: "";
-    width: 39px;
-    height: 40px;
+    width: 37px;
+    height: 35px;
     border: 2px solid $black;
     top: -12px;
     left: 0;
@@ -118,21 +126,25 @@
   &::after {
     position: absolute;
     content: "";
-    width: 25px;
-    height: 20px;
-    top: 0;
-    left: 10px;
+    width: 23px;
+    height: 23px;
+    top: -6px;
+    left: 8px;
     background: url("../../img/icon-tick.svg") no-repeat center;
   }
+}
+
+.order-form__titel--name {
+  margin-bottom: 29px;
 }
 
 .order-form__input-name {
   display: block;
   width: 260px;
-  height: 36px;
+  height: 44px;
   font-size: 17px;
   line-height: 18px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   border: none;
   border-bottom: 2px solid $black;
 
@@ -152,6 +164,11 @@
   line-height: 18px;
   font-weight: 700;
   margin-bottom: 2px;
+}
+
+.order-form__list--contacts {
+  margin: 0;
+  padding-top: 10px;
 }
 
 .order-form__input-tel {
@@ -174,6 +191,18 @@
   }
 }
 
+.order-form__item-tel {
+  position: relative;
+}
+
+.order-form__input-tel-icon {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  top: 35px;
+  fill: #cccccc;
+}
+
 .order-form__label-tel {
   position: relative;
   display: block;
@@ -182,7 +211,7 @@
   line-height: 16px;
   font-weight: 700;
   color: $light-green;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   &::after {
     position: absolute;
@@ -192,6 +221,18 @@
     top: 8px;
     border-bottom: 1px solid $light-green;
   }
+}
+
+.order-form__item-e-mail {
+  position: relative;
+}
+
+.order-form__input-e-mail-icon {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  top: 35px;
+  fill: #cccccc;
 }
 
 .order-form__input-e-mail {
@@ -221,7 +262,7 @@
   line-height: 16px;
   font-weight: 700;
   color: $light-green;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   &::after {
     position: absolute;
@@ -233,21 +274,12 @@
   }
 }
 
-.order-form__textarea-addition {
-  width: 226px;
-  height: 110px;
-  font-size: 17px;
-  line-height: 18px;
-  border: 2px solid $black;
-  padding: 15px;
+.order-form__list--addition {
+  margin: 0;
+}
 
-  &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 400;
-    color: $dark-grey;
-    opacity: 0.3;
-  }
+.order-form__item-addition {
+  margin-bottom: 7px;
 }
 
 .order-form__label-addition {
@@ -270,9 +302,26 @@
   }
 }
 
+.order-form__textarea-addition {
+  width: 226px;
+  height: 110px;
+  padding: 15px;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $black;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $dark-grey;
+    opacity: 0.3;
+  }
+}
+
 .order-form__note {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: $dark-grey;
   font-size: 14px;
   line-height: 16px;
@@ -288,10 +337,20 @@
 
 @media (min-width: 768px) {
   .order-form {
+    position: relative;
     width: 768px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 75px;
+    padding-top: 72px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__zigzag-fill {
+    width: 768px;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -15px;
   }
 
   .order-form__text {
@@ -302,9 +361,14 @@
     margin-bottom: 30px;
   }
 
-  .order-form__wrpper-type {
+  .order-form__wrapper-type {
     display: flex;
     padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .order-form__list-type {
+    margin-bottom: 0;
   }
 
   .order-form__titel {
@@ -390,21 +454,23 @@
   .order-form__list--color {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    margin-top: 10px;
+    width: 520px;
+    margin-top: 13px;
 
     li {
-      width: 250px;
+      width: 260px;
     }
   }
 
   .order-form__wrpper-name {
     display: flex;
+    padding-bottom: 20px;
   }
 
   .order-form__list--name {
     width: 500px;
-    padding-top: 45px;
+    padding-top: 65px;
+    margin: 0;
   }
 
   .order-form__titel--name {
@@ -432,7 +498,7 @@
     font-size: 19px;
     line-height: 18px;
     padding-bottom: 20px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     border: none;
     border-bottom: 2px solid $black;
 
@@ -456,10 +522,24 @@
   }
 
   .order-form__item-tel {
+    position: relative;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 70px;
+    padding-top: 55px;
+  }
+
+  .order-form__input-tel-icon {
+    right: 75px;
+    top: 45px;
+
+    &:hover {
+      fill: $light-green;
+    }
+
+    &:active {
+      fill: $light-green;
+    }
   }
 
   .order-form__label-tel {
@@ -474,6 +554,7 @@
     width: 500px;
     flex-grow: 1;
     height: 15px;
+    padding: 0;
     padding-bottom: 15px;
     background-color: $light-grey;
 
@@ -490,11 +571,25 @@
   }
 
   .order-form__item-e-mail {
+    position: relative;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 13px;
     padding-bottom: 20px;
+  }
+
+  .order-form__input-e-mail-icon {
+    right: 75px;
+    top: 5px;
+
+    &:hover {
+      fill: $light-green;
+    }
+
+    &:active {
+      fill: $light-green;
+    }
   }
 
   .order-form__label-e-mail {
@@ -509,6 +604,7 @@
     width: 500px;
     flex-grow: 1;
     height: 15px;
+    padding: 0;
     padding-bottom: 15px;
     background-color: $light-grey;
 
@@ -581,25 +677,45 @@
     width: 230px;
     font-size: 17px;
     line-height: 16px;
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .order-form {
+    position: relative;
     width: 1150px;
   }
 
-  .page-main__intro-title {
-    padding-top: 135px;
-    font-size: 53px;
-    line-height: 57px;
+  .order-form__zigzag-fill {
+    width: 1150px;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -20px;
   }
 
   .order-form__text {
-    margin-top: 60px;
+    margin-top: 45px;
     margin-bottom: 25px;
     padding-left: 225px;
     padding-right: 225px;
+  }
+
+  .order-form__wrapper-type {
+    padding-top: 30px;
+  }
+
+  .order-form__wrpper-color {
+    padding-top: 55px;
   }
 
   .order-form__titel {
@@ -619,6 +735,10 @@
     }
   }
 
+  .order-form__wrpper-name {
+    padding-bottom: 0;
+  }
+
   .order-form__list--name {
     width: 875px;
     margin-top: 0;
@@ -629,6 +749,10 @@
 
   .order-form__input-name {
     width: 575px;
+  }
+
+  .order-form__list--contacts {
+    padding-top: 18px;
   }
 
   .order-form__item-tel {
@@ -644,6 +768,10 @@
     flex-grow: 0;
   }
 
+  .order-form__input-tel-icon {
+    right: 230px;
+  }
+
   .order-form__item-e-mail {
     padding-left: 110px;
   }
@@ -655,6 +783,14 @@
   .order-form__input-e-mail {
     width: 700px;
     flex-grow: 0;
+  }
+
+  .order-form__input-e-mail-icon {
+    right: 230px;
+  }
+
+  .order-form__list--addition {
+    padding-bottom: 40px;
   }
 
   .order-form__item-addition {

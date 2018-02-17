@@ -58,14 +58,17 @@
       <h1 class="page-main__intro-title">Вязание на заказ</h1>
     </div>
     <section class="order-form">
+      <svg class="order-form__zigzag-fill" width="768" height="34">
+        <use xlink:href="img/sprite.svg#bg-zigzag-fill"></use>
+      </svg>
       <h2 class="visually-hidden">Форма заказа</h2>
       <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="order-form__fieldset">
-          <div class="order-form__wrpper-type">
+          <div class="order-form__wrapper-type">
             <p class="order-form__titel">Тип</p>
-            <ul class="order-form__list">
+            <ul class="order-form__list order-form__list-type">
               <li class="order-form__item">
                 <input class="order-form__input-type" type="radio" name="type" id="interior" checked>
                 <label class="order-form__label-type" for="interior">Аксессуар для интерьера</label>
@@ -130,10 +133,16 @@
         <fieldset class="order-form__fieldset">
           <ul class="order-form__list  order-form__list--contacts">
             <li class="order-form__item-tel">
+              <svg class="order-form__input-tel-icon" width="25" height="24">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
               <label class="order-form__label-tel" for="tel">ТЕЛ</label>
               <input class="order-form__input-tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
             </li>
             <li class="order-form__item-e-mail">
+              <svg class="order-form__input-e-mail-icon" width="32" height="32">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
               <label class="order-form__label-e-mail" for="e-mail">E-MAIL</label>
               <input class="order-form__input-e-mail" type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
             </li>

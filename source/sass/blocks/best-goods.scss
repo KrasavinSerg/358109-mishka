@@ -1,7 +1,8 @@
 .best-goods {
+  position: relative;
   width: 260px;
   margin: 0 auto;
-  padding: 28px 30px 36px;
+  padding: 28px 30px 48px;
   background-color: $white;
 }
 
@@ -92,7 +93,11 @@
 }
 
 .best-goods__zigzag {
-  display: none;
+  width: 320px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
@@ -102,7 +107,7 @@
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   .best-goods__zigzag-fill {
@@ -129,7 +134,8 @@
     font-size: 17px;
     line-height: 17px;
     width: 100px;
-    text-align: bottom;
+    text-align: center;
+    padding-right: 15px;
     margin: 0;
   }
 
@@ -178,7 +184,7 @@
   }
 
   .best-goods__zigzag {
-    display: block;
+    width: 768px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -191,6 +197,13 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 95px;
+  }
+
+  .best-goods__zigzag-fill {
+    width: 1250px;
+    left: -50px;
+    top: -20px;
   }
 
   .best-goods__wrapper-title {
@@ -250,5 +263,11 @@
 
   .best-goods__wrapper-image {
     width: 525px;
+  }
+
+  .best-goods__zigzag {
+    width: 1050px;
+    left: 50px;
+    bottom: 0;
   }
 }

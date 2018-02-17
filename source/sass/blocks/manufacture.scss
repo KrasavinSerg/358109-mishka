@@ -5,7 +5,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 0;
-  padding-bottom: 24px;
+  padding-bottom: 58px;
 }
 
 .manufacture__wrapper {
@@ -42,8 +42,9 @@
 .manufacture__text {
   margin: 0;
   padding-left: 34px;
-  padding-top: 30px;
-  margin-bottom: 28px;
+  padding-right: 32px;
+  padding-top: 28px;
+  margin-bottom: 24px;
   color: $dark-grey;
   font-size: 13px;
   line-height: 24px;
@@ -67,6 +68,7 @@
 .manufacture__order {
   width: 190px;
   margin: 0 auto;
+  padding-bottom: 15px;
   margin-bottom: 30px;
   font-size: 17px;
   line-height: 16px;
@@ -76,6 +78,7 @@
   .manufacture {
     width: 668px;
     padding: 50px;
+    padding-bottom: 60px;
   }
 
   .manufacture__wrapper {
@@ -99,10 +102,11 @@
   .manufacture__title {
     font-size: 20px;
     padding-left: 107px;
+    padding-top: 35px;
 
     &::before {
-      left: 45px;
-      top: 25px;
+      left: 43px;
+      top: 35px;
     }
   }
 
@@ -111,12 +115,22 @@
     line-height: 30px;
     padding-left: 41px;
     padding-right: 41px;
-    margin-bottom: 44px;
+    padding-top: 10px;
+    margin-bottom: 34px;
   }
 
   .manufacture__order {
     width: 580px;
     margin-bottom: 45px;
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -124,7 +138,7 @@
   .manufacture {
     width: 1050px;
     padding: 50px;
-    padding-top: 30px;
+    padding-top: 55px;
     padding-bottom: 105px;
   }
 
@@ -134,12 +148,10 @@
 
   .manufacture__video {
     width: 680px;
-    height: 455px;
   }
 
   .manufacture__title {
     max-width: 260px;
-    /*margin-left: 80px;*/
     margin-right: -340px;
     padding: 0;
     padding-left: 80px;
@@ -161,6 +173,8 @@
   .manufacture__text {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 30px;
+    margin-bottom: 45px;
     font-size: 15px;
     line-height: 30px;
   }
