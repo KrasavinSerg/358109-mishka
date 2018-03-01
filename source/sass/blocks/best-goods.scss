@@ -1,8 +1,13 @@
 .best-goods {
+  position: relative;
   width: 260px;
   margin: 0 auto;
-  padding: 28px 30px 36px;
+  padding: 28px 30px 48px;
   background-color: $white;
+}
+
+.best-goods__zigzag-fill {
+  display: none;
 }
 
 .best-goods__name {
@@ -87,22 +92,42 @@
   }
 }
 
+.best-goods__zigzag {
+  width: 320px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
 @media (min-width: 768px) {
   .best-goods {
+    position: relative;
     width: 668px;
+    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 70px;
+  }
+
+  .best-goods__zigzag-fill {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -20px;
   }
 
   .best-goods__wrapper-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .best-goods__name {
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
   }
 
   .best-goods__title {
@@ -110,11 +135,23 @@
     line-height: 17px;
     width: 100px;
     text-align: center;
+    padding-right: 15px;
+    margin: 0;
   }
 
   .best-goods__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .best-goods__description {
+    margin-bottom: 33px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-goods__value {
+    width: 190px;
   }
 
   .best-goods__wrapper-image {
@@ -131,7 +168,27 @@
   }
 
   .best-goods__wrapper-price {
+    width: 290px;
     margin-top: -110px;
+  }
+
+  .best-goods__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .best-goods__button-order {
+    width: 285px;
+    padding-top: 15px;
+  }
+
+  .best-goods__zigzag {
+    width: 768px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
   }
 }
 
@@ -140,6 +197,13 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 95px;
+  }
+
+  .best-goods__zigzag-fill {
+    width: 1250px;
+    left: -50px;
+    top: -20px;
   }
 
   .best-goods__wrapper-title {
@@ -199,5 +263,11 @@
 
   .best-goods__wrapper-image {
     width: 525px;
+  }
+
+  .best-goods__zigzag {
+    width: 1050px;
+    left: 50px;
+    bottom: 0;
   }
 }

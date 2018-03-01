@@ -12,7 +12,7 @@
   width: 260px;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 26px;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
   margin: 0 auto;
   background-color: $light-grey;
 }
@@ -35,39 +35,54 @@
   text-decoration: none;
   color: $black;
   font-weight: 400;
+  font-size: 0;
+}
 
-  &--insta {
-    width: 22px;
-    height: 21px;
-    font-size: 0;
-    background: url("../../img/icon-insta.svg") no-repeat center;
+.page-footer__icon-fb {
+  &:hover {
+    fill: $footer-icon-hover;
   }
 
-  &--fb {
-    width: 15px;
-    height: 28px;
-    font-size: 0;
-    background: url("../../img/icon-fb.svg") no-repeat center;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-inst {
+  &:hover {
+    fill: $footer-icon-hover;
   }
 
-  &--tw {
-    width: 23px;
-    height: 20px;
-    font-size: 0;
-    background: url("../../img/icon-twitter.svg") no-repeat center;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-tw {
+  &:hover {
+    fill: $footer-icon-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .page-footer__copyright-text {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 30px;
   padding-left: 70px;
   font-size: 19px;
   line-height: 18px;
   color: $black;
   font-weight: 700;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-link {
@@ -78,8 +93,18 @@
   height: 35px;
   font-size: 0;
   text-decoration: none;
-  background: url("../../img/htmlacademy.svg") no-repeat center;
-  background-size: 150%;
+}
+
+.page-footer__copyright-icon {
+  fill: $light-green;
+
+  &:hover {
+    fill: $dark-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -93,20 +118,33 @@
 
   .page-footer__logo {
     display: block;
-    width: 190px;
+    width: 178px;
     margin-right: auto;
+  }
+
+  .page-footer__logo-image {
+    cursor: pointer;
+
+    &:hover {
+      fill: $footer-icon-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
     width: 140px;
     margin: 0;
     margin-right: auto;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 58px;
+    padding-bottom: 60px;
     border: none;
   }
 
   .page-footer__copyright-text {
+    padding-top: 38px;
     padding-left: 0;
   }
 }
@@ -117,7 +155,7 @@
   }
 
   .page-footer__logo {
-    width: 190px;
+    width: 177px;
     display: block;
     margin-right: auto;
   }

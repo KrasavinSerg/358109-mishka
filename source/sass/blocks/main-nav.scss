@@ -12,42 +12,55 @@
 
 .main-nav__item {
   list-style: none;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 25px;
   border-bottom: 2px solid $border;
 
   &--logo {
-    padding-top: 23px;
-    padding-bottom: 22px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 18px;
+
     background-color: $white;
   }
 
   &--search {
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 19px;
-      height: 19px;
-      top: 31px;
-      left: 32px;
-      background: url("../../img/icon-search.svg") no-repeat center;
-    }
   }
 
   &--cart {
     position: relative;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 19px;
-      height: 19px;
-      top: 31px;
-      left: 32px;
-      background: url("../../img/icon-cart.svg") no-repeat center;
+  .main-nav__item-icon-search {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    fill: $cart-search;
+
+    &:hover {
+      fill: $light-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__item-icon-cart {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    fill: $cart-search;
+
+    &:hover {
+      fill: $light-green;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -75,11 +88,13 @@
   &--order,
   &--cart {
     &:hover {
-      opacity: 0.6;
+      /*opacity: 0.6;*/
+      color: #8d8d8d;
     }
 
     &:active {
-      opacity: 0.3;
+      /*opacity: 0.3;*/
+      color: #cacaca;
     }
   }
 
@@ -133,17 +148,33 @@
 
     &--logo {
       width: 320px;
+      padding-top: 20px;
+      padding-bottom: 15px;
       text-align: left;
       padding-left: 50px;
       border-bottom: 1px solid $border;
+    }
+
+    &--logo img {
+      width: 113px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &--catalog {
       order: 1;
       width: 167px;
       text-align: left;
-      margin-left: 50px;
       padding-top: 20px;
+      padding-left: 0;
+      margin-left: 50px;
+
 
       a {
         font-size: 15px;
@@ -155,6 +186,7 @@
       width: 167px;
       text-align: left;
       padding-top: 20px;
+      padding-left: 0;
       margin-right: auto;
 
       a {
@@ -163,8 +195,10 @@
     }
 
     &--search {
-      width: 84px;
-      padding-bottom: 26px;
+      width: 83px;
+      padding-left: 0;
+      padding-top: 33px;
+      padding-bottom: 24px;
       border: 1px solid $border;
       border-top: none;
       background-color: $white;
@@ -178,6 +212,8 @@
       width: 226px;
       flex-grow: 1;
       padding-left: 85px;
+      padding-top: 33px;
+      padding-bottom: 30px;
       text-align: left;
       border-bottom: 1px solid $border;
       background-color: $white;
@@ -209,6 +245,10 @@
     width: 1150px;
   }
 
+  .main-nav__item--logo img {
+    width: 149px;
+  }
+
   .main-nav__item {
     border: none;
     margin: 0;
@@ -216,8 +256,10 @@
     &--logo {
       width: 167px;
       text-align: center;
-      padding-left: 0;
-      padding-right: 95px;
+      padding-top: 2px;
+      padding-bottom: 0;
+      padding-left: 14px;
+      padding-right: 92px;
       border-bottom: 1px solid $border;
     }
 
@@ -228,6 +270,7 @@
       text-align: left;
       line-height: 24px;
       padding-top: 30px;
+      padding-bottom: 34px;
       background-color: $white;
       border-right: 1px solid $border;
       border-bottom: 1px solid $border;
@@ -242,7 +285,8 @@
       width: 210px;
       text-align: left;
       padding-top: 30px;
-      padding-left: 38px;
+      padding-bottom: 34px;
+      padding-left: 30px;
       border-bottom: 1px solid $border;
       background-color: $white;
 
@@ -253,6 +297,7 @@
 
     &--search {
       width: 84px;
+      padding-top: 32px;
       padding-bottom: 26px;
       border: 1px solid $border;
       border-top: none;
@@ -264,10 +309,11 @@
     }
 
     &--cart {
-      /*width: 318px;*/
       flex-grow: 1;
       padding-left: 35px;
       padding-right: 50px;
+      padding-top: 30px;
+      padding-bottom: 34px;
       text-align: right;
       border-bottom: 1px solid $border;
       background-color: $white;
@@ -286,7 +332,7 @@
     &--sale {
       display: block;
       width: 210px;
-      padding-left: 50px;
+      padding-left: 30px;
       padding-top: 20px;
       margin-right: auto;
       text-align: left;

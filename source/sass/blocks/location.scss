@@ -7,7 +7,7 @@
 
 .location__contacts-title {
   margin: 0;
-  padding: 33px 30px;
+  padding: 31px 30px 26px;
   color: $black;
   font-size: 18px;
   line-height: 30px;
@@ -29,7 +29,7 @@
 .location__contacts-text {
   width: 180px;
   margin-left: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 
   &--e-mail {
     text-decoration: underline;
@@ -47,7 +47,7 @@
 }
 
 .location__contacts-type {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   width: 77px;
 }
 
@@ -75,12 +75,14 @@
       width: 47px;
       height: 81px;
       right: 50px;
-      top: 25px;
+      top: 40px;
       background: url("../../img/icon-flag.svg") no-repeat center;
     }
   }
 
   .location__contacts-title {
+    padding-top: 57px;
+    padding-bottom: 47px;
     padding-left: 50px;
     padding-right: 50px;
     font-size: 43px;
@@ -90,6 +92,9 @@
   .location__contacts-list {
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .location__contacts-text {
@@ -103,15 +108,28 @@
 
   .location__button {
     width: 228px;
+    margin-top: 51px;
+    margin-bottom: 54px;
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .location {
-    width: 975px;
+    width: 925px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 175px;
+    padding-left: 225px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     margin-right: 0;
 
     &::before {
@@ -119,8 +137,8 @@
       content: "";
       width: 47px;
       height: 81px;
-      left: 60px;
-      top: 60px;
+      left: 110px;
+      top: 130px;
     }
   }
 
