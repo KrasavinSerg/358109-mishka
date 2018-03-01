@@ -1,4 +1,10 @@
 .modal {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
   width: 260px;
   margin: 0 auto;
   background-color: $white;
@@ -7,6 +13,11 @@
   padding-top: 35px;
   padding-bottom: 45px;
   margin-bottom: 10px;
+  box-shadow: 0 0 33px rgba(0, 0, 0, 0.75);
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal__title {

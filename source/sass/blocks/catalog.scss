@@ -75,7 +75,7 @@
   font-size: 0;
 }
 
-.catalog__item-cart {
+.catalog__icon-cart {
   fill: $cart-search;
 }
 
@@ -131,7 +131,7 @@
     font-size: 17px;
   }
 
-  .catalog__item-cart {
+  .catalog__icon-cart {
     &:hover {
       fill: $light-green;
     }
