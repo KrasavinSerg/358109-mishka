@@ -1,17 +1,11 @@
 var order_btn = document.querySelector (".best-goods__button-order");
-// var cart = document.querySelector (".test");
 var popup = document.querySelector(".modal");
 
 
-order_btn.addEventListener("click", function (evt) {
+order_btn.addEventListener("click", function (evt){
   evt.preventDefault();
   popup.classList.toggle("modal-show");
 });
-
-// cart.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   popup.classList.toggle("modal-show");
-// });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
